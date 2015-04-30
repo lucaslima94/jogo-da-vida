@@ -1,23 +1,26 @@
 #include<stdio.h>
 
+main(){
 <<<<<<< HEAD
-int** iteracao(int** mat, int tam, int linha){
-	int i, j, x,contador=0,contador2=0,**mat2;
-	x = tam;
-	mat2 = (malloc( x * sizeof(int)));
-    for (j = 0; j < x; j++){
-        mat2[j] = (malloc(x * sizeof(int)));
-    }
-    printf("\n \n \n");
-    for(i=0;i<x;i++){
-		for(j=0;j<x;j++){
-			mat2[i][j]=mat[i][j];	
+	int i,j,contador=0,mat[10][10],mat2[10][10],contador2=0;
+	for(i=0;i<10;i++){
+		for(j=0;j<10;j++){
+			mat[i][j]=rand()%3;
+=======
+	int i,j,contador=0,mat[10][10],mat2[10][10];
+	for(i=0;i<10;i++){
+		for(j=0;j<10;j++){
+			mat[i][j]=rand()%2;
+>>>>>>> 794fde893b034fce1c70f1e6801dce7e8b66d142
+			mat2[i][j]=mat[i][j];
+			printf("%d ",mat[i][j]);
 		}
+		printf("\n");
 	}
-	for(i = 0; i < x; i++){
-       		printf("\n");
-       		for(j = 0; j < x; j++){
-            	if(i==0 && j==0){
+	printf("\n");
+	for(i=0;i<10;i++){
+		for(j=0;j<10;j++){
+			if(i==0 && j==0){
 				if(mat[i][j+1]==1){
 					contador=contador+1;
 				}
@@ -27,6 +30,7 @@ int** iteracao(int** mat, int tam, int linha){
 				if(mat[i+1][j]==1){
 					contador=contador+1;
 				}
+<<<<<<< HEAD
 				if(mat[i][j+1]==2){
 					contador2=contador2+1;
 				}
@@ -36,9 +40,11 @@ int** iteracao(int** mat, int tam, int linha){
 				if(mat[i+1][j]==2){
 					contador2=contador2+1;
 				}
+=======
+>>>>>>> 794fde893b034fce1c70f1e6801dce7e8b66d142
 			}
 			else{
-			if(i==0 && j==(x-1)){
+			if(i==0 && j==9){
 				if(mat[i][j-1]==1){
 					contador=contador+1;
 				}
@@ -48,6 +54,7 @@ int** iteracao(int** mat, int tam, int linha){
 				if(mat[i+1][j]==1){
 					contador=contador+1;
 				}
+<<<<<<< HEAD
 				if(mat[i][j-1]==2){
 					contador2=contador2+1;
 				}
@@ -57,9 +64,11 @@ int** iteracao(int** mat, int tam, int linha){
 				if(mat[i+1][j]==2){
 					contador2=contador2+1;
 				}
+=======
+>>>>>>> 794fde893b034fce1c70f1e6801dce7e8b66d142
 			}
 			else{
-			if(i==0 && (j>0 && j<(x-1))){
+			if(i==0 && (j>0 && j<9)){
 				if(mat[i][j-1]==1){
 					contador=contador+1;
 				}
@@ -75,6 +84,7 @@ int** iteracao(int** mat, int tam, int linha){
 				if(mat[i+1][j+1]==1){
 					contador=contador+1;
 				}
+<<<<<<< HEAD
 				if(mat[i][j-1]==2){
 					contador2=contador2+1;
 				}
@@ -90,9 +100,11 @@ int** iteracao(int** mat, int tam, int linha){
 				if(mat[i+1][j+1]==2){
 					contador2=contador2+1;
 				}
+=======
+>>>>>>> 794fde893b034fce1c70f1e6801dce7e8b66d142
 			}
 			else{
-			if(i==(x-1) && j==0){
+			if(i==9 && j==0){
 				if(mat[i-1][j]==1){
 					contador=contador+1;
 				}
@@ -101,6 +113,67 @@ int** iteracao(int** mat, int tam, int linha){
 				}
 				if(mat[i][j+1]==1){
 					contador=contador+1;
+				}
+<<<<<<< HEAD
+				if(mat[i-1][j]==2){
+					contador2=contador2+1;
+				}
+				if(mat[i-1][j+1]==2){
+					contador2=contador2+1;
+				}
+				if(mat[i][j+1]==2){
+					contador2=contador2+1;
+				}
+=======
+>>>>>>> 794fde893b034fce1c70f1e6801dce7e8b66d142
+			}
+			else{
+			if(i==9 && j==9){
+				if(mat[i][j-1]==1){
+					contador=contador+1;
+				}
+				if(mat[i-1][j-1]==1){
+					contador=contador+1;
+				}
+				if(mat[i-1][j]==1){
+					contador=contador+1;
+				}
+<<<<<<< HEAD
+				if(mat[i][j-1]==2){
+					contador2=contador2+1;
+				}
+				if(mat[i-1][j-1]==2){
+					contador2=contador2+1;
+				}
+				if(mat[i-1][j]==2){
+					contador2=contador2+1;
+				}
+=======
+>>>>>>> 794fde893b034fce1c70f1e6801dce7e8b66d142
+			}
+			else{
+			if(i==9 && (j>0 && j<9)){
+				if(mat[i][j-1]==1){
+					contador=contador+1;
+				}
+				if(mat[i-1][j-1]==1){
+					contador=contador+1;
+				}
+				if(mat[i-1][j]==1){
+					contador=contador+1;
+				}
+				if(mat[i-1][j+1]==1){
+					contador=contador+1;
+				}
+				if(mat[i][j+1]==1){
+					contador=contador+1;
+				}
+<<<<<<< HEAD
+				if(mat[i][j-1]==2){
+					contador2=contador2+1;
+				}
+				if(mat[i-1][j-1]==2){
+					contador2=contador2+1;
 				}
 				if(mat[i-1][j]==2){
 					contador2=contador2+1;
@@ -113,61 +186,12 @@ int** iteracao(int** mat, int tam, int linha){
 				}
 			}
 			else{
-			if(i==(x-1) && j==(x-1)){
-				if(mat[i][j-1]==1){
-					contador=contador+1;
-				}
-				if(mat[i-1][j-1]==1){
-					contador=contador+1;
-				}
-				if(mat[i-1][j]==1){
-					contador=contador+1;
-				}
-				if(mat[i][j-1]==2){
-					contador2=contador2+1;
-				}
-				if(mat[i-1][j-1]==2){
-					contador2=contador2+1;
-				}
-				if(mat[i-1][j]==2){
-					contador2=contador2+1;
-				}
+			if(j==0 && (i>0 && i<9)){
+=======
 			}
 			else{
-			if(i==(x-1) && (j>0 && j<(x-1))){
-				if(mat[i][j-1]==1){
-					contador=contador+1;
-				}
-				if(mat[i-1][j-1]==1){
-					contador=contador+1;
-				}
-				if(mat[i-1][j]==1){
-					contador=contador+1;
-				}
-				if(mat[i-1][j+1]==1){
-					contador=contador+1;
-				}
-				if(mat[i][j+1]==1){
-					contador=contador+1;
-				}
-				if(mat[i][j-1]==2){
-					contador2=contador2+1;
-				}
-				if(mat[i-1][j-1]==2){
-					contador2=contador2+1;
-				}
-				if(mat[i-1][j]==2){
-					contador2=contador2+1;
-				}
-				if(mat[i-1][j+1]==2){
-					contador2=contador2+1;
-				}
-				if(mat[i][j+1]==2){
-					contador2=contador2+1;
-				}
-			}
-			else{
-			if(j==0 && (i>0 && i<(x-1))){
+			if(j==0 && (i>0 && j<9)){
+>>>>>>> 794fde893b034fce1c70f1e6801dce7e8b66d142
 				if(mat[i-1][j]==1){
 					contador=contador+1;
 				}
@@ -183,6 +207,7 @@ int** iteracao(int** mat, int tam, int linha){
 				if(mat[i+1][j+1]==1){
 					contador=contador+1;
 				}
+<<<<<<< HEAD
 				if(mat[i-1][j]==2){
 					contador2=contador2+1;
 				}
@@ -200,7 +225,12 @@ int** iteracao(int** mat, int tam, int linha){
 				}
 			}
 			else{
-			if(j==(x-1) && (i>0 && i<(x-1))){
+			if(j==9 && (i>0 && i<9)){
+=======
+			}
+			else{
+			if(j==9 && (i>0 && j<9)){
+>>>>>>> 794fde893b034fce1c70f1e6801dce7e8b66d142
 				if(mat[i-1][j]==1){
 					contador=contador+1;
 				}
@@ -216,6 +246,7 @@ int** iteracao(int** mat, int tam, int linha){
 				if(mat[i+1][j]==1){
 					contador=contador+1;
 				}
+<<<<<<< HEAD
 				if(mat[i-1][j]==2){
 					contador2=contador2+1;
 				}
@@ -231,9 +262,11 @@ int** iteracao(int** mat, int tam, int linha){
 				if(mat[i+1][j]==2){
 					contador2=contador2+1;
 				}
+=======
+>>>>>>> 794fde893b034fce1c70f1e6801dce7e8b66d142
 			}
 			else{
-			if((i>0 && i<(x-1)) && (j>0 && j<(x-1))){
+			if((i>0 && i<9) && (j>0 && j<9)){
 				if(mat[i-1][j-1]==1){
 					contador=contador+1;
 				}
@@ -258,6 +291,7 @@ int** iteracao(int** mat, int tam, int linha){
 				if(mat[i+1][j+1]==1){
 					contador=contador+1;
 				}
+<<<<<<< HEAD
 				if(mat[i-1][j-1]==2){
 					contador2=contador2+1;
 				}
@@ -281,6 +315,8 @@ int** iteracao(int** mat, int tam, int linha){
 				}
 				if(mat[i+1][j+1]==2){
 					contador2=contador2+1;
+=======
+>>>>>>> 794fde893b034fce1c70f1e6801dce7e8b66d142
 				}
 				}
 				}
@@ -290,7 +326,9 @@ int** iteracao(int** mat, int tam, int linha){
 				}
 				}
 				}
+<<<<<<< HEAD
 				}
+			printf("%d ",contador2);
 			
 			if(mat[i][j]==1){
 				if(contador2==1){
@@ -316,12 +354,26 @@ int** iteracao(int** mat, int tam, int linha){
 				}
 				}
 				}
+=======
+			printf("%d ",contador);
+			if(mat[i][j]==1){
+				if(contador>3){
+					mat2[i][j]=0;
+				}
+				if(contador<2){
+					mat2[i][j]=0;
+				}
+				if(contador==2 || contador==3){
+					mat2[i][j]=mat[i][j];
+				}
+>>>>>>> 794fde893b034fce1c70f1e6801dce7e8b66d142
 			}
 			if(mat[i][j]==0){
 				if(contador==3){
 					mat2[i][j]=1;
 				}
 			}
+<<<<<<< HEAD
 			if(mat[i][j]==2){
 				if(contador==0){
 					mat2[i][j]=0;
@@ -334,86 +386,22 @@ int** iteracao(int** mat, int tam, int linha){
 			}
 			contador=0;
 			contador2=0;
-        	}
-    	}
-    	return mat2;
+=======
+			contador=0;
+>>>>>>> 794fde893b034fce1c70f1e6801dce7e8b66d142
+			
+		}
+		
+	}
+	printf("\n");
+	printf("\n");
+	printf("\n");
+	for(i=0;i<10;i++){
+		for(j=0;j<10;j++){
+			printf("%d ",mat2[i][j]);
+		}
+		printf("\n");
+	}
 }
-
-main(){
-    int i,j,x, **matriz, temp1,temp2,temp3,iteracoes=10,i2;
-    FILE * fp;
-    x = 10;
-    printf("%d %d \n", x, x);
-=======
-main(){
-    int y,i,j,x, **matriz, temp1,temp2,temp3;
-    FILE * fp;
-    scanf("%d", &x);
-    scanf("%d", &y);
-    printf("%d %d \n", x, y);
->>>>>>> ad31163ba16f6c2ffcb8a7652ca85e5787700c91
-
-	fp=fopen("entrada.txt","r");
-	if (!fp){
-        printf ("Erro na abertura do arquivo.");
-        exit (1);
-    }
-
-    matriz = (malloc( x * sizeof(int)));
-    for (j = 0; j < x; j++){
-<<<<<<< HEAD
-        matriz[j] = (malloc(x * sizeof(int)));
-=======
-        matriz[j] = (malloc(y * sizeof(int)));
->>>>>>> ad31163ba16f6c2ffcb8a7652ca85e5787700c91
-    }
-
-    //Zerando matriz inicial
-    for(i = 0; i < x; i++){
-<<<<<<< HEAD
-        for(j = 0; j < x; j++){
-=======
-        for(j = 0; j < y; j++){
->>>>>>> ad31163ba16f6c2ffcb8a7652ca85e5787700c91
-            matriz[i][j] = 0;
-        }
-    }
-    while(!feof(fp)){
-        fscanf(fp, "%d", &temp1);
-        fscanf(fp, "%d", &temp2);
-        fscanf(fp, "%d", &temp3);
-        matriz[temp1-1][temp2-1] = temp3;
-<<<<<<< HEAD
-        printf("L: %d C: %d Celula: %d\n", temp1, temp2, temp3);
-=======
-        printf("teste %d %d %d teste\n", temp1, temp2, temp3);
->>>>>>> ad31163ba16f6c2ffcb8a7652ca85e5787700c91
-    }
-    fclose(fp);
-    // Testar a matriz
-    for(i = 0; i < x; i++){
-        printf("\n");
-<<<<<<< HEAD
-        for(j = 0; j < x; j++){
-            printf("%d ", matriz[i][j]);
-        }
-    }
-    for(i2=0;i2<iteracoes;i2++){
-	matriz=iteracao(matriz, x, 1);
-	for(i = 0; i < x; i++){
-        printf("\n");
-        for(j = 0; j < x; j++){
-=======
-        for(j = 0; j < y; j++){
->>>>>>> ad31163ba16f6c2ffcb8a7652ca85e5787700c91
-            printf("%d ", matriz[i][j]);
-        }
-    }
-}
-<<<<<<< HEAD
-}
-
-=======
->>>>>>> ad31163ba16f6c2ffcb8a7652ca85e5787700c91
 
 
