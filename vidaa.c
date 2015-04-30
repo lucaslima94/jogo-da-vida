@@ -1,10 +1,17 @@
 #include<stdio.h>
 
 main(){
+<<<<<<< HEAD
 	int i,j,contador=0,mat[10][10],mat2[10][10],contador2=0;
 	for(i=0;i<10;i++){
 		for(j=0;j<10;j++){
 			mat[i][j]=rand()%3;
+=======
+	int i,j,contador=0,mat[10][10],mat2[10][10];
+	for(i=0;i<10;i++){
+		for(j=0;j<10;j++){
+			mat[i][j]=rand()%2;
+>>>>>>> 794fde893b034fce1c70f1e6801dce7e8b66d142
 			mat2[i][j]=mat[i][j];
 			printf("%d ",mat[i][j]);
 		}
@@ -23,6 +30,7 @@ main(){
 				if(mat[i+1][j]==1){
 					contador=contador+1;
 				}
+<<<<<<< HEAD
 				if(mat[i][j+1]==2){
 					contador2=contador2+1;
 				}
@@ -32,6 +40,8 @@ main(){
 				if(mat[i+1][j]==2){
 					contador2=contador2+1;
 				}
+=======
+>>>>>>> 794fde893b034fce1c70f1e6801dce7e8b66d142
 			}
 			else{
 			if(i==0 && j==9){
@@ -44,6 +54,7 @@ main(){
 				if(mat[i+1][j]==1){
 					contador=contador+1;
 				}
+<<<<<<< HEAD
 				if(mat[i][j-1]==2){
 					contador2=contador2+1;
 				}
@@ -53,6 +64,8 @@ main(){
 				if(mat[i+1][j]==2){
 					contador2=contador2+1;
 				}
+=======
+>>>>>>> 794fde893b034fce1c70f1e6801dce7e8b66d142
 			}
 			else{
 			if(i==0 && (j>0 && j<9)){
@@ -71,6 +84,7 @@ main(){
 				if(mat[i+1][j+1]==1){
 					contador=contador+1;
 				}
+<<<<<<< HEAD
 				if(mat[i][j-1]==2){
 					contador2=contador2+1;
 				}
@@ -86,6 +100,8 @@ main(){
 				if(mat[i+1][j+1]==2){
 					contador2=contador2+1;
 				}
+=======
+>>>>>>> 794fde893b034fce1c70f1e6801dce7e8b66d142
 			}
 			else{
 			if(i==9 && j==0){
@@ -98,6 +114,7 @@ main(){
 				if(mat[i][j+1]==1){
 					contador=contador+1;
 				}
+<<<<<<< HEAD
 				if(mat[i-1][j]==2){
 					contador2=contador2+1;
 				}
@@ -107,6 +124,8 @@ main(){
 				if(mat[i][j+1]==2){
 					contador2=contador2+1;
 				}
+=======
+>>>>>>> 794fde893b034fce1c70f1e6801dce7e8b66d142
 			}
 			else{
 			if(i==9 && j==9){
@@ -119,6 +138,7 @@ main(){
 				if(mat[i-1][j]==1){
 					contador=contador+1;
 				}
+<<<<<<< HEAD
 				if(mat[i][j-1]==2){
 					contador2=contador2+1;
 				}
@@ -128,6 +148,8 @@ main(){
 				if(mat[i-1][j]==2){
 					contador2=contador2+1;
 				}
+=======
+>>>>>>> 794fde893b034fce1c70f1e6801dce7e8b66d142
 			}
 			else{
 			if(i==9 && (j>0 && j<9)){
@@ -146,6 +168,7 @@ main(){
 				if(mat[i][j+1]==1){
 					contador=contador+1;
 				}
+<<<<<<< HEAD
 				if(mat[i][j-1]==2){
 					contador2=contador2+1;
 				}
@@ -164,6 +187,11 @@ main(){
 			}
 			else{
 			if(j==0 && (i>0 && i<9)){
+=======
+			}
+			else{
+			if(j==0 && (i>0 && j<9)){
+>>>>>>> 794fde893b034fce1c70f1e6801dce7e8b66d142
 				if(mat[i-1][j]==1){
 					contador=contador+1;
 				}
@@ -179,6 +207,7 @@ main(){
 				if(mat[i+1][j+1]==1){
 					contador=contador+1;
 				}
+<<<<<<< HEAD
 				if(mat[i-1][j]==2){
 					contador2=contador2+1;
 				}
@@ -197,6 +226,11 @@ main(){
 			}
 			else{
 			if(j==9 && (i>0 && i<9)){
+=======
+			}
+			else{
+			if(j==9 && (i>0 && j<9)){
+>>>>>>> 794fde893b034fce1c70f1e6801dce7e8b66d142
 				if(mat[i-1][j]==1){
 					contador=contador+1;
 				}
@@ -212,6 +246,7 @@ main(){
 				if(mat[i+1][j]==1){
 					contador=contador+1;
 				}
+<<<<<<< HEAD
 				if(mat[i-1][j]==2){
 					contador2=contador2+1;
 				}
@@ -227,6 +262,8 @@ main(){
 				if(mat[i+1][j]==2){
 					contador2=contador2+1;
 				}
+=======
+>>>>>>> 794fde893b034fce1c70f1e6801dce7e8b66d142
 			}
 			else{
 			if((i>0 && i<9) && (j>0 && j<9)){
@@ -254,6 +291,7 @@ main(){
 				if(mat[i+1][j+1]==1){
 					contador=contador+1;
 				}
+<<<<<<< HEAD
 				if(mat[i-1][j-1]==2){
 					contador2=contador2+1;
 				}
@@ -277,6 +315,8 @@ main(){
 				}
 				if(mat[i+1][j+1]==2){
 					contador2=contador2+1;
+=======
+>>>>>>> 794fde893b034fce1c70f1e6801dce7e8b66d142
 				}
 				}
 				}
@@ -286,6 +326,7 @@ main(){
 				}
 				}
 				}
+<<<<<<< HEAD
 				}
 			printf("%d ",contador2);
 			
@@ -313,12 +354,26 @@ main(){
 				}
 				}
 				}
+=======
+			printf("%d ",contador);
+			if(mat[i][j]==1){
+				if(contador>3){
+					mat2[i][j]=0;
+				}
+				if(contador<2){
+					mat2[i][j]=0;
+				}
+				if(contador==2 || contador==3){
+					mat2[i][j]=mat[i][j];
+				}
+>>>>>>> 794fde893b034fce1c70f1e6801dce7e8b66d142
 			}
 			if(mat[i][j]==0){
 				if(contador==3){
 					mat2[i][j]=1;
 				}
 			}
+<<<<<<< HEAD
 			if(mat[i][j]==2){
 				if(contador==0){
 					mat2[i][j]=0;
@@ -331,6 +386,9 @@ main(){
 			}
 			contador=0;
 			contador2=0;
+=======
+			contador=0;
+>>>>>>> 794fde893b034fce1c70f1e6801dce7e8b66d142
 			
 		}
 		
